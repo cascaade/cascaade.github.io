@@ -1,52 +1,58 @@
-const nav = document.querySelector("nav");
+const projectsContainer = document.getElementById('projects-container');
+const loadMoreProjectsButton = document.getElementById('load-more-projects-button');
 
-let transition = false;
-let changeNavbar = true;
-let toLocation;
+function createProjectCard(data) {
+    const stuff =  `<img src="assets/${data.img}" alt="Image" class="project-image">
+                    <div class="project-info-container">
+                        <span class="project-name">${data.name}<span class="timestamp">${data.time}</span></span>
+                        <span class="project-desc">${data.desc}</span>
+                    </div>`;
 
-window.addEventListener("scroll", (e) => {
-    if (changeNavbar) {
-        checkScrollLocation(document.documentElement.scrollTop);
+    const div = document.createElement('div');
+    div.classList.add('project-card');
+    div.innerHTML = stuff;
+
+    div.onclick = () => {
+        window.location.href = '/view/?p=' + data.path;
+    }
+    
+    projectsContainer.append(div);
+}
+
+const projectsDB = [
+    {
+        name: 'Flappy Bird',
+        desc: 'Not just any old minimalist game...',
+        img: 'bird.png',
+        time: '7/12/25',
+        path: 'bird',
+    },
+];
+
+let cardsPerRow = window.innerWidth > 1300 ? 3 : 1 // based on css styling
+let perClick = cardsPerRow * 2 // 2 new rows per "more" click
+let i = 0;
+
+function genMoreCards(initial) {
+    const rect = loadMoreProjectsButton.getBoundingClientRect();
+    const y = rect.top + window.scrollY - window.innerHeight * cardsPerRow/10; // 10 seems to be most reasonable for all platforms
+
+    for (let x = i; x < i + perClick; x++) {
+        if (x >= projectsDB.length) break;
+        createProjectCard(projectsDB[x]);
     }
 
-    let t = 10;
+    i += perClick;
 
-    if (document.documentElement.scrollTop - t <= toLocation && document.documentElement.scrollTop + t >= toLocation) {
-        changeNavbar = true;
-    }
-
-    if (transition) {
-        nav.style.transition = "all 500ms cubic-bezier(.36,.11,.29,1)";
-    }
-});
-
-function checkScrollLocation(y) {
-    if (nav.classList.contains("full")) {
-        if (y > window.innerHeight * 0.8) { // past the hero
-            nav.classList.remove("full");
-        }
+    if (i < projectsDB.length) {
+        loadMoreProjectsButton.style.display = 'block';
     } else {
-        if (y <= window.innerHeight * 0.6) {
-            nav.classList.add("full");
-        }
+        loadMoreProjectsButton.style.display = 'none';
     }
 
-    transition = true;
-}
-
-function navScroll(y, str) {
-    if (typeof y === 'string') {
-        const element = document.getElementById(y);
-        if (element) {
-            y = Math.max(0, element.offsetTop - window.innerHeight * 0.15);
-        }
+    if (!initial) { // if not generating the first chunk of cards
+        navScroll(y, '#projects');
     }
-
-    toLocation = y;
-    changeNavbar = false;
-    window.scrollTo({top: y, behavior: 'smooth'});
-    checkScrollLocation(y);
-    window.history.pushState({}, '', str)
 }
 
-checkScrollLocation(document.documentElement.scrollTop);
+genMoreCards(true);

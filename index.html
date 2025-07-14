@@ -5,21 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="navbar-container">
-        <nav>
-            <img src="assets/logo_blue_nobg.svg" alt="logo" id="title-img">
-            <div id="nav-buttons">
-                <a href="#" onclick="event.preventDefault(); navScroll(0, '#');">Home</a>
-                <a href="#about" onclick="event.preventDefault(); navScroll('about', '#about');">About</a>
-                <a href="#projects" onclick="event.preventDefault(); navScroll('projects', '#projects');">Projects</a>
-                <!-- <a href="#timeline" onclick="event.preventDefault(); navScroll('timeline', '#timeline');">Timeline</a> -->
-            </div>
-        </nav>
-    </div>
+    <div id="navbar-container"></div>
 
     <div id="hero">
         <div id="hero-content">
@@ -30,19 +21,13 @@
     </div>
 
     <div id="content">
-        <h3 id="about">About Me</h3>
-        <p>Nam semper dictum nibh ac rutrum. Nulla nunc enim, pellentesque vitae nisi non, tempus placerat ligula. Nullam sem neque, finibus non convallis ut, faucibus non purus. Nullam vel augue lorem. Curabitur a mi vel purus mollis fermentum non in ipsum. Nam tincidunt lobortis quam, vel congue metus viverra et. Phasellus vehicula finibus nibh id semper. Aliquam blandit mattis laoreet. Aenean vel ultricies massa. Nam suscipit purus non libero pulvinar convallis non at dolor.</p>
-        <p>Nulla facilisi. Donec ornare metus vitae velit feugiat, ut tempus felis blandit. Ut vitae erat a ipsum ornare dignissim nec in massa. Maecenas rutrum erat a justo consequat, nec congue augue tempor. Nulla ultrices sed libero non tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu ligula porta, commodo nisi in, condimentum felis. Curabitur porta metus quis lorem porttitor ultricies. Maecenas volutpat, enim vitae luctus faucibus, neque magna aliquet tortor, ac pellentesque dolor nisi et sapien. Praesent iaculis felis a augue tristique, in congue metus porttitor. In laoreet porttitor consectetur. Maecenas in eleifend ex. Praesent commodo, eros ac efficitur pharetra, nibh ipsum consequat nunc, et volutpat eros dui sed elit.</p>
-        <p>Integer eleifend luctus nibh, nec rhoncus ligula ultricies sed. Nulla rhoncus risus lorem, eget tincidunt massa commodo ut. Pellentesque ullamcorper in magna id lobortis. Duis posuere vulputate aliquet. Nullam ultricies, urna sed tristique vulputate, nunc ligula sodales erat, eu ullamcorper metus lectus non felis. Phasellus non odio libero. Nulla mollis magna elit, vel mollis nibh consectetur sed.</p>
-        <p>Nam eu enim ac orci interdum viverra in et nisl. Morbi consectetur lorem a vestibulum vehicula. Sed aliquam augue vel libero accumsan, non facilisis nibh sollicitudin. Vivamus aliquam massa massa, ac molestie erat facilisis id. Praesent condimentum egestas porttitor. Sed in lorem et ex placerat pellentesque id auctor lacus. Nullam interdum risus ut sem porta, non luctus sem iaculis. Etiam luctus ipsum mauris, ac pulvinar mi rhoncus sed. Suspendisse sit amet magna at mauris consectetur auctor quis in diam.</p>
-        <p>Vivamus condimentum, tortor non aliquet vehicula, ante nulla malesuada eros, dictum mattis magna lacus ac enim. Morbi ullamcorper euismod posuere. Suspendisse finibus sit amet elit vel ullamcorper. Fusce pretium metus pulvinar semper porttitor. Etiam bibendum lectus enim, ac volutpat purus euismod sed. Nam accumsan viverra velit non rutrum. Fusce at massa erat. Morbi fringilla lectus lorem, eu faucibus quam lobortis id. Praesent tortor odio, vestibulum et dapibus at, posuere et sem. Nunc in cursus lectus. Suspendisse a viverra lectus. Curabitur gravida libero finibus ullamcorper viverra. Pellentesque sit amet lorem accumsan, molestie felis vitae, consequat elit. Donec ornare condimentum ex id sagittis. Sed mi libero, feugiat feugiat ullamcorper vel, fringilla sed libero.</p>
-        <p>Maecenas pharetra mi rhoncus tellus aliquet, nec convallis sem mattis. Integer lobortis tincidunt erat at varius. Quisque vehicula neque non nibh scelerisque, non ultrices metus dictum. Curabitur nec turpis mattis metus rutrum congue quis eu ante. Donec non ante enim. Ut quis pretium sapien. Mauris viverra, elit eu interdum semper, magna purus volutpat nisl, ullamcorper elementum enim sem quis ante. Vestibulum metus felis, vehicula sed enim ac, commodo suscipit lacus. Donec posuere mauris at ante varius, vitae egestas purus placerat. Aliquam vitae elementum velit, sed lobortis velit. Vestibulum in tempus nulla, eget consectetur orci. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <h3 id="about">About Me <span class="timestamp">6/13/25</span></h3>
+        <p>Hello. I'm Owen, a high-schooler who loves making websites and Arduino projects. I've created many user interface designs over the years, wherever they may be. I'm a programmer on my school's FIRST robotics team, where I wrote code for the robot's visual odometry and helped to design a brand new, modernized website.</p>
+        <p>I've listed a few polished projects worth looking at below. Thank's for stopping by!</p>
+
         <h3 id="projects">Projects</h3>
-        <p>Nam ut turpis tortor. Nunc sed mattis ipsum, in rutrum libero. Nunc a sem nulla. In eu tempor est. Vivamus faucibus ut nulla sit amet scelerisque. Aenean interdum erat nec massa vestibulum, ut elementum nunc semper. Etiam non tincidunt ante, vitae convallis arcu. Phasellus mattis nunc quis sollicitudin rutrum. Donec diam nibh, egestas vel lacinia eu, ornare in elit. Nulla tempus dapibus est, malesuada mollis nisi rhoncus id. Vivamus blandit rutrum erat eu placerat. Quisque sit amet leo sit amet nisi pharetra vehicula. Proin congue sapien urna, et eleifend nibh sagittis at. Donec sit amet enim varius, aliquam nisi quis, hendrerit lacus. Nulla facilisi.</p>
-        <p>Vivamus nec tellus sit amet turpis bibendum tempus non ac urna. Etiam faucibus risus id dolor congue lobortis. Praesent convallis enim leo, at maximus sapien fringilla et. Ut fringilla nisi ornare odio vestibulum porttitor. Integer venenatis sapien sit amet urna convallis semper. Duis risus nisi, congue ut blandit at, tincidunt vel leo. Nulla tempor, massa eu mattis malesuada, mauris nisl laoreet magna, in ullamcorper mi nibh in metus. Proin vulputate, neque pretium tristique mattis, nulla quam interdum lacus, at porttitor ligula diam id libero.</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum non purus gravida, hendrerit nisl eget, congue est. Vestibulum elementum laoreet risus, et blandit enim euismod ut. Nulla facilisi. Donec scelerisque sem semper mi congue, sit amet faucibus lacus congue. Suspendisse viverra egestas odio at sodales. Duis sed mi leo. Vivamus porta pretium erat, vitae accumsan diam blandit nec. Fusce dapibus eleifend ipsum sit amet imperdiet.</p>
-        <p>Nam tempus, ex ut tincidunt efficitur, ex lacus tempor massa, vel tempus risus quam quis nibh. Nam vel massa vitae tortor consequat convallis sit amet quis libero. Sed accumsan, tortor ullamcorper dapibus ultrices, nisi mauris mattis erat, ut ullamcorper risus nisi id nisi. Integer tempus eu nunc vel sodales. Maecenas aliquet sodales elit, ut scelerisque urna vulputate elementum. Suspendisse rutrum, augue sit amet malesuada luctus, velit magna eleifend urna, eget auctor purus augue in diam. Mauris volutpat pharetra imperdiet. Proin ultrices nisi ac tristique ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris venenatis tellus felis, vel varius justo rhoncus ac. Nulla ut ante sed diam maximus laoreet. In varius laoreet velit, vitae convallis odio rhoncus in.</p>
-        <p>Vivamus risus enim, blandit eu justo id, suscipit sagittis libero. Nam pulvinar erat sit amet metus euismod tristique a eget dui. Proin lorem metus, iaculis ut tempor id, tempus bibendum tellus. Morbi volutpat rhoncus metus, eget semper leo semper vitae. Suspendisse tincidunt porta orci, eget efficitur justo interdum eu. Duis finibus, libero pulvinar sodales congue, tortor elit placerat massa, eget pharetra odio felis fermentum purus. Pellentesque congue diam ut consectetur finibus. Duis ac iaculis mauris, sit amet venenatis purus. Suspendisse massa lectus, mattis a urna ac, lacinia ultricies lectus. Nam scelerisque neque quis velit luctus, non lobortis ipsum posuere. Nunc tincidunt nec ex at tincidunt. Sed condimentum nunc ut sapien dapibus, in pulvinar dui ultrices. Morbi tincidunt nisi ac tortor dignissim, ac pharetra eros gravida. Phasellus volutpat dolor turpis, eu condimentum tellus volutpat vitae. Quisque efficitur, purus sit amet porttitor hendrerit, erat neque luctus mi, at euismod nunc leo nec justo. Vestibulum urna ipsum, gravida eu tincidunt sollicitudin, gravida ac mauris.</p>
+        <div id="projects-container"></div>
+        <button class="button" id="load-more-projects-button" onclick="genMoreCards()">&sdot;&sdot;&sdot;</button>
         <!-- <h3 id="timeline">Timeline</h3> -->
         <!-- <p>Nam ut turpis tortor. Nunc sed mattis ipsum, in rutrum libero. Nunc a sem nulla. In eu tempor est. Vivamus faucibus ut nulla sit amet scelerisque. Aenean interdum erat nec massa vestibulum, ut elementum nunc semper. Etiam non tincidunt ante, vitae convallis arcu. Phasellus mattis nunc quis sollicitudin rutrum. Donec diam nibh, egestas vel lacinia eu, ornare in elit. Nulla tempus dapibus est, malesuada mollis nisi rhoncus id. Vivamus blandit rutrum erat eu placerat. Quisque sit amet leo sit amet nisi pharetra vehicula. Proin congue sapien urna, et eleifend nibh sagittis at. Donec sit amet enim varius, aliquam nisi quis, hendrerit lacus. Nulla facilisi.</p>
         <p>Vivamus nec tellus sit amet turpis bibendum tempus non ac urna. Etiam faucibus risus id dolor congue lobortis. Praesent convallis enim leo, at maximus sapien fringilla et. Ut fringilla nisi ornare odio vestibulum porttitor. Integer venenatis sapien sit amet urna convallis semper. Duis risus nisi, congue ut blandit at, tincidunt vel leo. Nulla tempor, massa eu mattis malesuada, mauris nisl laoreet magna, in ullamcorper mi nibh in metus. Proin vulputate, neque pretium tristique mattis, nulla quam interdum lacus, at porttitor ligula diam id libero.</p>
@@ -51,10 +36,22 @@
         <p>Vivamus risus enim, blandit eu justo id, suscipit sagittis libero. Nam pulvinar erat sit amet metus euismod tristique a eget dui. Proin lorem metus, iaculis ut tempor id, tempus bibendum tellus. Morbi volutpat rhoncus metus, eget semper leo semper vitae. Suspendisse tincidunt porta orci, eget efficitur justo interdum eu. Duis finibus, libero pulvinar sodales congue, tortor elit placerat massa, eget pharetra odio felis fermentum purus. Pellentesque congue diam ut consectetur finibus. Duis ac iaculis mauris, sit amet venenatis purus. Suspendisse massa lectus, mattis a urna ac, lacinia ultricies lectus. Nam scelerisque neque quis velit luctus, non lobortis ipsum posuere. Nunc tincidunt nec ex at tincidunt. Sed condimentum nunc ut sapien dapibus, in pulvinar dui ultrices. Morbi tincidunt nisi ac tortor dignissim, ac pharetra eros gravida. Phasellus volutpat dolor turpis, eu condimentum tellus volutpat vitae. Quisque efficitur, purus sit amet porttitor hendrerit, erat neque luctus mi, at euismod nunc leo nec justo. Vestibulum urna ipsum, gravida eu tincidunt sollicitudin, gravida ac mauris.</p> -->
     </div>
 
+    <script src="main.js"></script>
     <script src="script.js"></script>
 
     <footer>
-        <p>&copy; 2025 Owen. All rights reserved.</p>
+        <div id="dev-info">
+            <span id="dev-name">Owen</span>
+            <span id="dev-role">Full Stack Developer<br>Design Enthusiast<br>Maker</span>
+            <span id="dev-tagline">Learn. Make. Create.</span>
+        </div>
+        <a href="#" class="button" id="back-to-top" onclick="event.preventDefault(); navScroll(0, '#');">&#1997; Back to Top</a>
+        <div id="footer-footer">
+            <span>&copy; 2025 Owen. All rights reserved.</span>
+            <div id="footer-icons">
+                <a href="https://github.com/cascaade/"><img src="assets/github-mark-white.svg" alt="GitHub"></a>
+            </div>
+        </div>
     </footer>
 </body>
 

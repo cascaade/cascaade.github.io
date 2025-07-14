@@ -1,0 +1,9 @@
+<nav>
+    <img src="/assets/logo_blue_nobg.svg" alt="logo" id="title-img">
+    <div id="nav-buttons">
+        <a href="/#" onclick="if (window.location.pathname != '/') {return}; event.preventDefault(); navScroll(0, '#');">Home</a>
+        <a href="/#about" onclick="if (window.location.pathname != '/') {return}; event.preventDefault(); navScroll('about', '#about');">About</a>
+        <a href="/#projects" onclick="if (window.location.pathname != '/') {return}; event.preventDefault(); navScroll('projects', '#projects');">Projects</a>
+        <!-- <a href="#timeline" onclick="event.preventDefault(); navScroll('timeline', '#timeline');">Timeline</a> -->
+    </div>
+</nav>
