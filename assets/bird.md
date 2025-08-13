@@ -29,7 +29,7 @@ As for the time it took..... I probably shouldn't have wasted an entire day over
 
 <br>
 
-![Flappy Bird gameplay image](/assets/flappy-bird.png)
+![Flappy Bird gameplay image](/assets/bird.png)
 
 <br>
 

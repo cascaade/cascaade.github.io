@@ -21,6 +21,13 @@ function createProjectCard(data) {
 
 const projectsDB = [
     {
+        name: 'Speed Reading Trainer',
+        desc: 'Learn to put a pep in your step when it comes to literacy!',
+        img: 'readspeed.png',
+        time: '8/13/25',
+        path: 'readspeed',
+    },
+    {
         name: 'Flappy Bird',
         desc: 'Not just any old minimalist game...',
         img: 'bird.png',
