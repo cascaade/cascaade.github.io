@@ -23,6 +23,7 @@ jobs:
           node-version: '22'
       - run: npm ci
       - run: npm run build
+      - run: ls -R ./dist
       - uses: actions/upload-pages-artifact@v4
         with:
           path: './dist'
@@ -33,8 +34,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+
     steps:
+      - uses: actions/download-pages-artifact@v1
       - id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
