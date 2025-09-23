@@ -1,0 +1,38 @@
+:root {
+    --accent-color: rgb(64, 157, 255);
+    --background-color: rgb(32, 32, 32);
+
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--background-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+}
+
+* {
+    font-family: inherit;
+}
+
+.button {
+    transition: box-shadow 150ms ease, background-color 150ms ease;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.05);
+}

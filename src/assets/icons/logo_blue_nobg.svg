@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="210mm"
+   viewBox="0 0 210 210"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="drawing.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70911897"
+     inkscape:cx="237.6188"
+     inkscape:cy="399.08677"
+     inkscape:window-width="1920"
+     inkscape:window-height="992"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g38"
+       transform="matrix(1.3169399,0,0,1.3169399,-31.558891,-33.278689)"
+       style="fill:#4897ff;fill-opacity:1">
+      <g
+         id="g39"
+         transform="translate(-1.431449)"
+         style="fill:#4897ff;fill-opacity:1">
+        <g
+           id="g55"
+           transform="matrix(0.91637646,0,0,0.91637646,15.22819,15.024353)"
+           style="fill:#4897ff;fill-opacity:1">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:86.1589px;font-family:'Modern No. 20';-inkscape-font-specification:'Modern No. 20, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4897ff;fill-opacity:1;stroke:none;stroke-width:3.42496;stroke-dasharray:none;stroke-opacity:1"
+             x="50.041939"
+             y="94.209839"
+             id="text38"><tspan
+               sodipodi:role="line"
+               id="tspan38"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:86.1589px;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4897ff;fill-opacity:1;stroke-width:3.42496"
+               x="50.041939"
+               y="94.209839">CASC</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:98.0883px;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4897ff;fill-opacity:1;stroke:none;stroke-width:3.86512;stroke-dasharray:none;stroke-opacity:1"
+             x="9.6101189"
+             y="81.192169"
+             id="text39"><tspan
+               sodipodi:role="line"
+               id="tspan39"
+               style="font-size:98.0883px;fill:#4897ff;fill-opacity:1;stroke-width:3.86512"
+               x="9.6101189"
+               y="81.192169">&gt;</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:86.1589px;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4897ff;fill-opacity:1;stroke:none;stroke-width:3.34591;stroke-dasharray:none;stroke-opacity:1"
+             x="49.011223"
+             y="163.0378"
+             id="text55"><tspan
+               sodipodi:role="line"
+               id="tspan55"
+               style="font-size:86.1589px;fill:#4897ff;fill-opacity:1;stroke-width:3.34591"
+               x="49.011223"
+               y="163.0378">AADE</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
