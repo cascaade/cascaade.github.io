@@ -24,7 +24,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: ls -R ./dist
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           path: './dist'
     
@@ -36,6 +36,6 @@ jobs:
     needs: build
 
     steps:
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v5
       - id: deployment
         uses: actions/deploy-pages@v4
