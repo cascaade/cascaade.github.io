@@ -24,7 +24,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: ls -R ./dist
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: './dist'
     
