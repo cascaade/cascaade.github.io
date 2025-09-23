@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 
 import Home from "@pages/Home";
@@ -9,8 +8,6 @@ import FlappyBirdNetwork from "@components/features/projects/FlappyBirdNetwork";
 import Project from "@pages/Project";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
             <NavBar />

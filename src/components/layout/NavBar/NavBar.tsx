@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './NavBar.module.scss';
 
 import icon from "@assets/icons/logo_blue_nobg.svg"
