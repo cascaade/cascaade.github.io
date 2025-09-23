@@ -5,6 +5,7 @@ import path from "node:path";
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
+    base: "/cascaade.github.io/",
     resolve: {
         alias: {
             "@assets": path.resolve(__dirname, "src/assets"),
