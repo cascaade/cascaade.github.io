@@ -1,6 +1,9 @@
 .content {
-    width: 60%;
+    min-width: 60%;
+    width: 600px;
     margin: auto;
+    box-sizing: border-box;
+    padding: 1.5rem calc(max(2%, 2rem)) 4rem;
 
     img {
         width: auto;

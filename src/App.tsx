@@ -17,8 +17,8 @@ function App() {
                     <Route path="/about" element={<Home />} />
                     <Route path="/projects" element={<Home />} />
                     
-                    <Route path="/projects/flappy-bird-network" element={<Project content={<FlappyBirdNetwork />} />} />
-                    <Route path="/projects/speed-reading" element={<Project content={<SpeedReading />} />} />
+                    <Route path="/projects/flappy-bird-network" element={<Project content={<FlappyBirdNetwork />} title={"flappy bird"} date={"5/5/5"} banner={""}/>} />
+                    <Route path="/projects/speed-reading" element={<Project content={<SpeedReading />} title={"speedreading"} date={"6/6/6"} banner={"7382"} />} />
                 </Routes>
             </Router>
             <Footer />
