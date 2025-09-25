@@ -1,7 +1,7 @@
-import type { ProjectProps } from "../ProjectCard/ProjectCard"
+import type { ProjectProps } from "@pages/Project"
 
 export const props: ProjectProps = {
-    name: "Sandwich Bot",
+    title: "Sandwich Bot",
     desc: "",
     date: "7/12/25",
     cardBanner: "",

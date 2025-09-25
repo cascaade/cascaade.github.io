@@ -1,10 +1,12 @@
-import type { ProjectProps } from "../ProjectCard/ProjectCard"
+import type { ProjectProps } from "@pages/Project"
+
+import banner from "@assets/images/bird.png"
 
 export const props: ProjectProps = {
-    name: "Flappy Bird",
+    title: "Flappy Bird",
     desc: "Not just any old minimalist game...",
     date: "7/12/25",
-    cardBanner: "",
+    cardBanner: banner,
     url: "flappy-bird-network"
 }
 
@@ -25,7 +27,7 @@ export default function FlappyBirdNetwork() {
             <p>As for the time it took..... I probably shouldn't have wasted an entire day over the very short weekend for this, but here we are. For reference, I woke up around noon today, and I'm writing this around 9pm, so it took me a good 7 or 8 hours to get this working smoothly.</p>
             <br />
 
-            <p><img src="/assets/bird.png" alt="Flappy Bird gameplay image" /></p>
+            <p><img src={banner} alt="Flappy Bird gameplay image" /></p>
             <br />
 
             <h2>Links</h2>

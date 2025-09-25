@@ -1,10 +1,12 @@
-import type { ProjectProps } from "../ProjectCard/ProjectCard"
+import type { ProjectProps } from "@pages/Project"
+
+import banner from "@assets/images/readspeed.png"
 
 export const props: ProjectProps = {
-    name: "Speed Reading Trainer",
+    title: "Speed Reading Trainer",
     desc: "Learn to put a pep in your step when it comes to literacy!",
     date: "8/13/25",
-    cardBanner: "",
+    cardBanner: banner,
     url: "speed-reading"
 }
 
@@ -17,6 +19,8 @@ export default function SpeedReading() {
             <p>After looking around, I found one website that might help my unfortunate soul, though it was paid. Taking inspiration from the reading speed tests on social media, along with those captions that flash one word at a time on the screen, I decided to make a software catered to me and my needs.</p>
             <p>Making an educated guess from the title, you will presumably be spot on what this project is about. It lets you change the words per minute, and the number of words shown at a time to help you get a higher comprehension rate, while decreasing the habit of hearing the words as they are read. I threw this together in like 2 hours, so it's not the most polished site out there, but it works.</p>
             <br />
+
+            <img src={banner} alt="" />
 
             <h2>Links</h2>
             <ul>
