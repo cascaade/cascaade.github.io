@@ -1,7 +1,5 @@
 import type { ProjectProps } from "../ProjectCard/ProjectCard"
 
-import banner from "@assets/images/readspeed.png"
-
 export const props: ProjectProps = {
     name: "Speed Reading Trainer",
     desc: "Learn to put a pep in your step when it comes to literacy!",
@@ -12,7 +10,6 @@ export const props: ProjectProps = {
     live: "https://cascaade.github.io/SpeedReadingTrainer",
     code: "https://github.com/cascaade/SpeedReadingTrainer",
 }
-
 
 export default function SpeedReading() {
     return (

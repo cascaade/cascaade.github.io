@@ -1,7 +1,6 @@
 import styles from "./Home.module.scss";
 
 import HomeHero from "@components/sections/HomeHero/HomeHero";
-import ProjectCard from "@components/features/ProjectCard";
 import type { ProjectProps } from "@components/features/ProjectCard/ProjectCard"
 
 import { props as flappyBirdNetworkProjectProps } from "@components/features/projects/FlappyBirdNetwork";

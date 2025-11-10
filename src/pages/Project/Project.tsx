@@ -1,4 +1,3 @@
-import ProjectHero from "@components/sections/ProjectHero";
 import styles from "./Project.module.scss"
 
 import type { ReactNode } from "react"
