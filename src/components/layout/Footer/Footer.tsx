@@ -1,11 +1,26 @@
+import Button from "@components/features/Button";
 import styles from "./Footer.module.scss";
 
 import githubIcon from "@assets/icons/github-mark-white.svg"
 
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
 export default function Footer() {
+
+    const scrollToTop = () => {
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: { y: 0 },
+            ease: "power4.out",
+        });
+    };
+
     return (
         <footer className={styles.footer}>
-            <div className={styles.dev}>
+            {/* <div className={styles.dev}>
                 <span className={styles.name}>Owen</span>
                 <span className={styles.role}>
                     Full Stack Developer
@@ -15,10 +30,8 @@ export default function Footer() {
                     Maker
                 </span>
                 <span className={styles.tagline}>Learn. Make. Create.</span>
-            </div>
-            <a href="#" className={styles.backToTop}>
-                &#1997; Back to Top
-            </a>
+            </div> */}
+            <Button type="secondary" onButtonClick={scrollToTop}>Back to Top</Button>
             <div className={styles.bar}>
                 <span>&copy; 2025 Owen. All rights reserved.</span>
                 <div className={styles.icons}>

@@ -1,15 +1,16 @@
 import type { ProjectProps } from "../ProjectCard/ProjectCard"
 
-import fbimage from '@assets/images/bird.png';
+import ptImage from '@assets/images/periodicTable.png';
 
 export const props: ProjectProps = {
-    name: "Flappy Bird Network",
-    desc: "A neural network designed to play flappy bird and improve with each generation.",
+    name: "The Periodic Table",
+    desc: "A simplistic periodic table that helps you practice, allowing you to guess a secret element based on its properties.",
     date: "7/12/25",
     cardBanner: "",
-    image: fbimage,
+    image: ptImage,
     url: "flappy-bird-network",
-    code: "https://github.com/cascaade/FlappyBird",
+    live: "https://cascaade.github.io/PeriodicTableCluesGame",
+    code: "https://github.com/cascaade/PeriodicTableCluesGame",
 }
 
 export default function FlappyBirdNetwork() {
@@ -29,7 +30,7 @@ export default function FlappyBirdNetwork() {
             <p>As for the time it took..... I probably shouldn't have wasted an entire day over the very short weekend for this, but here we are. For reference, I woke up around noon today, and I'm writing this around 9pm, so it took me a good 7 or 8 hours to get this working smoothly.</p>
             <br />
 
-            {/* <p><img src={banner} alt="Flappy Bird gameplay image" /></p> */}
+            <p><img src="/assets/bird.png" alt="Flappy Bird gameplay image" /></p>
             <br />
 
             <h2>Links</h2>

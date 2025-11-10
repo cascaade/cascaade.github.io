@@ -20,7 +20,6 @@ export type ProjectPageProps = {
 
 export default function Project(props: ProjectPageProps) {
     return (<>
-        <ProjectHero title={props.title} date={props.date} banner={props.banner}></ProjectHero>
         <div className={styles.content}>
             {props.content}
         </div>

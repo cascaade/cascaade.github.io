@@ -1,0 +1,107 @@
+.contact {
+    margin: 4rem 0;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .label {
+        color: var(--faded-text);
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+
+    .contactInfo {
+        box-shadow: 0 2px 12px var(--accent-color);
+        width: 100%;
+        border-radius: 0.6em;
+        box-sizing: border-box;
+        padding: 0.5em;
+    }
+
+    .hr {
+        width: 100%;
+        border: 1px solid var(--accent-color);
+        border-radius: 1px;
+        margin: 3em 0 1.8em;
+        position: relative;
+
+        .span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0 0.5em;
+            background: var(--background);
+            color: var(--faded-text);
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+    }
+
+    .fieldContainer {
+        position: relative;
+        width: 100%;
+        flex-shrink: 1;
+        flex-grow: 1;
+        margin-top: 1.2em;
+        font-size: 1.2em;
+
+        .inputField {
+            font-size: inherit;
+            background: none;
+            border: 1px solid var(--accent-color);
+            padding: 0.5em 0.8em;
+            border-radius: 0.5em;
+            outline: none;
+            width: 100%;
+            line-height: normal;
+            box-sizing: border-box;
+        }
+
+        .inputLabel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: 0;
+            transition: top 0.2s ease, left 0.2s ease, font-size 0.2s ease, transform 0.2s ease;
+            padding: 0.5em 0.8em;
+            box-sizing: border-box;
+            line-height: normal;
+            pointer-events: none;
+            color: var(--faded-text);
+            opacity: 0.5;
+            font-size: inherit;
+        }
+
+        .inputField:not(:placeholder-shown)+.inputLabel {
+            top: -0.6em;
+            left: 0;
+            font-size: 0.9rem;
+            transform: translateY(-50%);
+        }
+
+        .inputField:focus+.inputLabel {
+            top: -0.6em;
+            left: 0;
+            font-size: 0.9rem;
+            transform: translateY(-50%);
+        }
+
+        .textarea {
+            resize: none;
+            width: 100% !important;
+            margin-bottom: 1.2rem;
+            height: 10em;
+        }
+    }
+
+    .buttonContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
