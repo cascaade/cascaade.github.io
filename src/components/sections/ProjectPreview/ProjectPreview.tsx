@@ -2,7 +2,7 @@ import type { ProjectProps } from "@components/features/ProjectCard/ProjectCard"
 import styles from "./ProjectPreview.module.scss";
 import Button from "@components/features/Button";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,6 +11,17 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ProjectPreview(props: ProjectProps) {
     const boxRef = useRef<HTMLDivElement>({} as HTMLDivElement);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+
+    useEffect(() => {
+        let onResize = () => {
+            setIsMobile(window.innerWidth < 1200);
+        }
+
+        window.addEventListener("resize", onResize);
+        return () => { window.removeEventListener("resize", onResize) }
+    });
+
 
     useGSAP(() => {
         const ctx = gsap.context(() => {
@@ -48,7 +59,12 @@ export default function ProjectPreview(props: ProjectProps) {
     }, []);
 
     return (
-        <div className={styles.project} ref={boxRef}>
+        <div className={`${styles.project} ${isMobile && styles.mobile}`} ref={boxRef}>
+            {isMobile && (
+                <div className={styles.imageContainer}>
+                    <img src={props.image} alt="" className={styles.img} />
+                </div>
+            )}
             <div className={styles.infoContainer}>
                 <span className={styles.title}>{props.name}</span>
                 <span className={styles.desc}>{props.desc}</span>
@@ -70,9 +86,11 @@ export default function ProjectPreview(props: ProjectProps) {
                     )}
                 </div>
             </div>
-            <div className={styles.imageContainer}>
-                <img src={props.image} alt="" className={styles.img} />
-            </div>
+            {!isMobile && (
+                <div className={styles.imageContainer}>
+                    <img src={props.image} alt="" className={styles.img} />
+                </div>
+            )}
         </div>
     );
 }

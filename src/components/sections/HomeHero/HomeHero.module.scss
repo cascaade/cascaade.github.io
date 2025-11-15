@@ -12,46 +12,62 @@ $background-color-2: hsl(242, 50%, 10%);
     justify-content: center;
     gap: 2rem;
 
+    &.mobile {
+        flex-direction: column;
+        padding: 8rem 3rem;
+
+        .left {
+            max-width: 100%;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .right {
+            padding-top: 2rem;
+            row-gap: 0.6rem;
+        }
+    }
+
     .left {
         display: flex;
         flex-direction: column;
         max-width: 26vw; // (100vw - padding (48vw)) / 2
+    }
 
-        .intro {
-            font-size: 2rem;
-        }
+    .intro {
+        font-size: 2rem;
+    }
 
-        .name {
-            color: var(--accent-color);
-            text-shadow: 0 0 8px var(--accent-color);
-            font-size: 4rem;
-            font-weight: bold;
+    .name {
+        color: var(--accent-color);
+        text-shadow: 0 0 8px var(--accent-color);
+        font-size: 4rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .desc {
+        margin: 2em 0;
+    }
+    
+    .skillsContainer {
+        display: flex;
+        gap: 0.5em;
+        margin-bottom: 2rem;
+
+        .skill {
+            border: 1px solid var(--border-1);
+            color: var(--faded-text);
+            border-radius: 0.5em;
+            padding: .5em;
             line-height: 1;
+            cursor: pointer;
         }
+    }
 
-        .desc {
-            margin: 2em 0;
-        }
-        
-        .skillsContainer {
-            display: flex;
-            gap: 0.5em;
-            margin-bottom: 2rem;
-
-            .skill {
-                border: 1px solid var(--border-1);
-                color: var(--faded-text);
-                border-radius: 0.5em;
-                padding: .5em;
-                line-height: 1;
-                cursor: pointer;
-            }
-        }
-
-        .buttonsContainer {
-            display: flex;
-            gap: 0.5em;
-        }
+    .buttonsContainer {
+        display: flex;
+        gap: 0.5em;
     }
 
     .right {
@@ -62,24 +78,18 @@ $background-color-2: hsl(242, 50%, 10%);
         padding-top: 6rem;
 
         color: var(--faded-text);
-
-        .attribute {
-            display: flex;
-            gap: 0.5em;
-            line-height: 1;
-            user-select: none;
-
-            .icon {
-                height: 1.2rem;
-                aspect-ratio: 1;
-                filter: var(--accent-as-filter);
-            }
-        }
     }
-}
 
-@media (max-width: 800px) {
-    .hero {
-        height: 70vh;
+    .attribute {
+        display: flex;
+        gap: 0.5em;
+        line-height: 1;
+        user-select: none;
+
+        .icon {
+            height: 1.2rem;
+            aspect-ratio: 1;
+            filter: var(--accent-as-filter);
+        }
     }
 }

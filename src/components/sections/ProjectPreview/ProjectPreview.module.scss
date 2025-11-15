@@ -5,6 +5,14 @@
     display: flex;
     gap: 2em;
 
+    &.mobile {
+        flex-direction: column;
+        
+        .imageContainer {
+            width: 100%;
+        }
+    }
+
     .infoContainer {
         flex-grow: 1;
 
