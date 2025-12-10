@@ -9,6 +9,9 @@ import { props as clockProjectProps } from "@components/features/projects/ClockA
 import { props as periodicTableProps } from "@components/features/projects/PeriodicTable";
 import ProjectPreview from "@components/sections/ProjectPreview";
 import Contact from "@components/sections/Contact/Contact";
+import Technologies from "@components/sections/Technologies";
+
+import otherStyles from "./Home.module.scss";
 
 export default function Home() {
     const projects: ProjectProps[] = [
@@ -21,17 +24,16 @@ export default function Home() {
     return (
         <div className={styles.homePage}>
             <HomeHero />
-            <div className={styles.content}>
-                <div id="projects">
-                    {
-                        projects.map((p) => (
-                            <ProjectPreview {...p}/>
-                        ))
-                    }
-                </div>
-                <div id="contact">
-                    <Contact />
-                </div>
+            <div className={styles.content} id="projects">
+                {
+                    projects.map((p) => (
+                        <ProjectPreview {...p}/>
+                    ))
+                }
+            </div>
+            <Technologies className={styles.content} />
+            <div className={styles.content} id="contact">
+                <Contact />
             </div>
         </div>
     );

@@ -1,0 +1,11 @@
+$background-color: hsl(242, 50%, 10%);
+
+.technologies {
+    background-color: $background-color;
+
+    .technologiesContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
