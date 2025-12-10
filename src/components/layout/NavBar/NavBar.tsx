@@ -41,7 +41,7 @@ export default function NavBar() {
                 <img src={icon} alt="logo" className={styles.icon} />
                 <div className={styles.buttons}>
                     <button onClick={() => scrollTo("projects")}>Projects</button>
-                    <button onClick={() => scrollTo("timeline")}>Timeline</button>
+                    {/* <button onClick={() => scrollTo("timeline")}>Timeline</button> */}
                     <button onClick={() => scrollTo("contact")}>Contact</button>
                 </div>
             </div>
