@@ -11,8 +11,6 @@ import ProjectPreview from "@components/sections/ProjectPreview";
 import Contact from "@components/sections/Contact/Contact";
 import Technologies from "@components/sections/Technologies";
 
-import otherStyles from "./Home.module.scss";
-
 export default function Home() {
     const projects: ProjectProps[] = [
         clockProjectProps,

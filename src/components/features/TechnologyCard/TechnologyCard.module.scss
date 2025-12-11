@@ -1,16 +1,18 @@
 .card {
     display: flex;
-    gap: .8rem;
+    gap: .8em;
     align-items: center;
     
     border: 1px solid var(--border-1);
-    border-radius: 8px;
-    padding: 4px;
+    border-radius: 12px;
+    padding: 8px;
+
+    font-size: 0.9rem;
 
     .image {
         width: 52px;
         aspect-ratio: 1;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 4px;
     }
 

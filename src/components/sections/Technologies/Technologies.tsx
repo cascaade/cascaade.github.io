@@ -3,6 +3,9 @@ import styles from './Technologies.module.scss'
 import type { TechnologyCardProps } from '@components/features/TechnologyCard/TechnologyCard'
 
 import reactImg from '@assets/icons/react.svg'
+import viteImg from '@assets/icons/vite.svg'
+import javaImg from '@assets/icons/java.svg'
+import nodeImg from '@assets/icons/node.svg'
 
 export type TechnologiesProps = {
     className: string
@@ -10,7 +13,10 @@ export type TechnologiesProps = {
 
 export default function Technologies(props: TechnologiesProps) {
     const technologies: TechnologyCardProps[] = [
-        { name: "React", description: "A framework for building websites.", img: reactImg }
+        { name: "React", description: "A library used to create user interfaces.", img: reactImg },
+        { name: "Vite", description: "A framework for building websites.", img: viteImg },
+        { name: "Node.js", description: "A framework for building websites.", img: nodeImg },
+        { name: "Java", description: "A widely-used programming language.", img: javaImg },
     ]
 
     return (

@@ -1,7 +1,8 @@
-$background-color: hsl(242, 50%, 10%);
+$background-color: hsl(242, 15%, 15%);
 
 .technologies {
     background-color: $background-color;
+    padding: 4rem 0;
 
     .technologiesContainer {
         display: grid;
