@@ -29,7 +29,7 @@ export default function NavBar() {
         if (el) {
             gsap.to(window, {
                 duration: 1,
-                scrollTo: { y: el, offsetY: 100 },
+                scrollTo: { y: el },
                 ease: "power4.out",
             });
         }
