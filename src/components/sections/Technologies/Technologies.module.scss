@@ -10,3 +10,9 @@ $background-color: hsl(242, 15%, 15%);
         gap: 1rem;
     }
 }
+
+@media (max-width: 1200px) {
+    .technologies .technologiesContainer {
+        grid-template-columns: 1fr;
+    }
+}
