@@ -33,7 +33,7 @@ export default function Footer() {
             </div> */}
             <Button type="secondary" onButtonClick={scrollToTop}>Back to Top</Button>
             <div className={styles.bar}>
-                <span>&copy; 2025 Owen. All rights reserved.</span>
+                <span>&copy; 2026 Owen. All rights reserved.</span>
                 <div className={styles.icons}>
                     <a href="https://github.com/cascaade/">
                         <img src={githubIcon} alt="GitHub" />
