@@ -1,0 +1,35 @@
+.error {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    user-select: none;
+
+    .container {
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 48px; // navbar height to compensate
+
+        .glyph {
+            font-size: 12em;
+            line-height: 1;
+            display: block;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            margin-top: .5em;
+        }
+
+        .details {
+            font-weight: 300;
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+}
