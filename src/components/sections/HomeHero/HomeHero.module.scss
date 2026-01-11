@@ -1,13 +1,36 @@
 $background-color-1: hsl(242, 50%, 6%);
 $background-color-2: hsl(242, 50%, 10%);
 
+.heroWrapper {
+    background: linear-gradient(135deg, $background-color-1, $background-color-2);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    -webkit-mask-image: radial-gradient(circle, black 30%, transparent 60%);
+    mask-image: radial-gradient(circle, black 30%, transparent 60%);
+
+    background-image:
+        linear-gradient(to right, hsl(242, 50%, 18%) 1px, transparent 1px),
+        linear-gradient(to bottom, hsl(242, 50%, 18%) 1px, transparent 1px);
+    background-size: 22px 22px;
+
+    z-index: 1;
+}
+
+.hero > * {
+    z-index: 2;
+}
+
 .hero {
     width: 100%;
     padding: 8rem 24vw;
-    background: linear-gradient(135deg, $background-color-1, $background-color-2);
     position: relative;
     box-sizing: border-box;
-    
+
     display: flex;
     justify-content: center;
     gap: 2rem;
