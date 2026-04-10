@@ -59,8 +59,7 @@ export default function HomeHero() {
                         </div>
                     )}
                     <span className={styles.desc}>
-                        Crafting web experiences that users actually enjoy, pixel by
-                        pixel.
+                        I forge web experiences that users enjoy, line by line.
                     </span>
                     <div className={styles.skillsContainer}>
                         <span className={styles.skill}>React</span>
